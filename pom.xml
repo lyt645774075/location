@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>location-core</module>
-        <module>location-test</module>
+        <module>test</module>
+        <module>core</module>
     </modules>
 
 </project>

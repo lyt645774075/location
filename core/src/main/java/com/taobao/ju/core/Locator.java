@@ -7,9 +7,9 @@ import java.util.List;
  */
 public interface Locator {
 
-    public Object getFirstLocatedBean(Object bizObj);
+    public <T> T getFirstLocatedBean(Object bizObj);
 
-    public List<Object> getAllLocatedBean(Object bizObj);
+    public <T> List<T> getAllLocatedBean(Object bizObj);
 
     public List<LocationInfo> getAllLocationInfo();
 
