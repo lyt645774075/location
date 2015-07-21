@@ -4,6 +4,66 @@
             xmlns:beans="http://www.springframework.org/schema/beans"
             targetNamespace="http://www.taobao.com/ju/schema/location"
             elementFormDefault="qualified" attributeFormDefault="unqualified">
+    
+    <xsd:import namespace="http://www.springframework.org/schema/beans"/>
+
+
+    <xsd:element name="locator" type="locatorType"/>
+    <xsd:element name="routeInfoExtrator" type="extratorType"/>
+
+    <xsd:attributeGroup name="beanAttributes">
+        <xsd:attribute name="class" type="xsd:string"/>
+    </xsd:attributeGroup>
+
+
+    <xsd:complexType name="extratorType">
+        <xsd:attribute name="class" type="xsd:string"/>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="locatorType">
+        <xsd:complexContent>
+            <xsd:extension base="beans:identifiedType">
+                <xsd:group ref="locatorElements"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:group name="locatorElements">
+        <xsd:sequence>
+            <xsd:element name="locationInfo" type="locationInfoType"/>
+        </xsd:sequence>
+    </xsd:group>
+
+    <xsd:attributeGroup name="locatorAttrGroup">
+        <xsd:attribute name="bean-ref" type="xsd:string"/>
+    </xsd:attributeGroup>
+
+
+    <xsd:complexType name="locationInfoType">
+        <xsd:sequence>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="accept"/>
+                <xsd:element ref="refuse"/>
+            </xsd:choice>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="locatorAttrGroup"/>
+    </xsd:complexType>
+
+    <xsd:element name="accept" type="acceptType"/>
+    <xsd:element name="refuse" type="refuseType"/>
+
+    <xsd:complexType name="acceptType">
+        <xsd:attributeGroup ref="fieldAttrGroup"/>
+    </xsd:complexType>
+    <xsd:complexType name="refuseType">
+        <xsd:attributeGroup ref="fieldAttrGroup"/>
+    </xsd:complexType>
+
+    <xsd:attributeGroup name="fieldAttrGroup">
+        <xsd:attribute name="fieldName" type="xsd:string" use="required"/>
+        <xsd:attribute name="fieldValue" type="xsd:string" use="required"/>
+    </xsd:attributeGroup>
 
 
 </xsd:schema>

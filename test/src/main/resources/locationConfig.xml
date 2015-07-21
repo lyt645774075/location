@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:loca="http://www.taobao.com/ju/schema/location"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.taobao.com/ju/schema/location http://www.taobao.com/ju/schema/location/location.xsd">
+
+
+
+    <loca:locator id="ruleLocator">
+        <loca:locationInfo bean-ref="locator">
+            <loca:accept fieldName="11" fieldValue="11"/>
+            <loca:refuse fieldName="11" fieldValue="11"/>
+            <loca:accept fieldName="aa" fieldValue="aa"/>
+        </loca:locationInfo>
+    </loca:locator>
+
+    <loca:routeInfoExtrator class="com.taobao.ju.core.impl.LocationInfoImpl"/>
+
+
+</beans>
