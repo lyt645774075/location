@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.taobao.com/ju/schema/location"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:beans="http://www.springframework.org/schema/beans"
+            targetNamespace="http://www.taobao.com/ju/schema/location"
+            elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+
+</xsd:schema>
