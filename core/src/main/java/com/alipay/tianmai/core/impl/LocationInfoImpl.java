@@ -1,8 +1,8 @@
-package com.taobao.ju.core.impl;
+package com.alipay.tianmai.core.impl;
 
 import com.google.common.collect.Maps;
-import com.taobao.ju.core.LocationInfo;
-import com.taobao.ju.core.RouteInfo;
+import com.alipay.tianmai.core.LocationInfo;
+import com.alipay.tianmai.core.RouteInfo;
 
 import java.util.Map;
 

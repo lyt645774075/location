@@ -1,1 +1,1 @@
-http\://www.taobao.com/ju/schema/location=com.taobao.ju.xml.handler.LocationNameSpaceHandler
+http\://www.taobao.com/ju/schema/location=com.alipay.tianmai.xml.handler.LocationNameSpaceHandler

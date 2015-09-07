@@ -1,6 +1,7 @@
-package com.taobao.ju.xml.handler;
+package com.alipay.tianmai.xml.handler;
 
-import com.taobao.ju.xml.parser.LocationParser;
+import com.alipay.tianmai.xml.parser.LocationParser;
+import com.alipay.tianmai.xml.parser.LocationParser;
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
 /**

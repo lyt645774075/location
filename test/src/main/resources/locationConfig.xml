@@ -15,7 +15,7 @@
         </loca:locationInfo>
     </loca:locator>
 
-    <loca:routeInfoExtrator class="com.taobao.ju.core.impl.LocationInfoImpl"/>
+    <loca:routeInfoExtrator class="com.alipay.tianmai.core.impl.LocationInfoImpl"/>
 
 
 </beans>

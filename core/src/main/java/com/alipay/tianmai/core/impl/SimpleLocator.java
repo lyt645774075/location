@@ -1,16 +1,18 @@
-package com.taobao.ju.core.impl;
+package com.alipay.tianmai.core.impl;
 
+import com.alipay.tianmai.core.LocationInfo;
+import com.alipay.tianmai.core.Locator;
 import com.google.common.collect.Lists;
-import com.taobao.ju.core.LocationInfo;
-import com.taobao.ju.core.Locator;
-import com.taobao.ju.core.RouteInfoExtrator;
+import com.alipay.tianmai.core.LocationInfo;
+import com.alipay.tianmai.core.Locator;
+import com.alipay.tianmai.core.RouteInfoExtrator;
 
 import java.util.List;
 
 /**
  * Created by yangtao.lyt on 2015/7/20.
  */
-public class SimpleLocator implements Locator{
+public class SimpleLocator implements Locator {
 
     private List<LocationInfo> locationInfoList = Lists.newArrayList();
 

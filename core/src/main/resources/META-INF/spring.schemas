@@ -1,2 +1,2 @@
-http\://www.taobao.com/ju/schema/location/location-1.0.xsd=com/taobao/ju/xml/location-1.0.xsd
-http\://www.taobao.com/ju/schema/location/location.xsd=com/taobao/ju/xml/location-1.0.xsd
+http\://www.taobao.com/ju/schema/location/location-1.0.xsd=../../java/com/alipay/tianmai/xml/location-1.0.xsd
+http\://www.taobao.com/ju/schema/location/location.xsd=../../java/com/alipay/tianmai/xml/location-1.0.xsd

@@ -1,4 +1,4 @@
-package com.taobao.ju.xml.parser;
+package com.alipay.tianmai.xml.parser;
 
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;

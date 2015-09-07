@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="locator" class="com.taobao.ju.core.impl.SimpleLocator" parent="ruleLocator"/>
+    <bean id="locator" class="com.alipay.tianmai.core.impl.SimpleLocator" parent="ruleLocator"/>
 
 
 </beans>

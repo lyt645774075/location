@@ -1,4 +1,4 @@
-package com.taobao.ju.core;
+package com.alipay.tianmai.core;
 
 /**
  * Created by yangtao.lyt on 2015/7/20.

@@ -1,4 +1,4 @@
-package com.taobao.ju.core.domain;
+package com.alipay.tianmai.core.domain;
 
 
 import org.joda.time.DateTime;
